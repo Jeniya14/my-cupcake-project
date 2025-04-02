@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { RiCake3Fill } from 'react-icons/ri'
 import { HiMenu } from "react-icons/hi";
-
+import { IoCloseOutline } from "react-icons/io5";
 const Navbar = () => {
   const [isOpen,setIsOpen]=useState(false)
   const toggleMenu=()=>setIsOpen((prevIsopen)=>!prevIsopen)
@@ -19,15 +19,17 @@ const Navbar = () => {
         </div>
         <div className='md:hidden text-gray-500 '>
           <button className='text-3xl' onClick={toggleMenu}>
-           <HiMenu className='hover:drop-shadow-sm'/>
+            {isOpen ? <IoCloseOutline /> :<HiMenu className='hover:drop-shadow-sm'/>  }
           </button>
         </div>
       </div>
-      <div className={`menu-link ${isOpen ? 'block' : 'hidden'}`}>
-          <a href="#home" className=''>Home</a>
-          <a href="#about">About</a>
-          <a href="#blog">Blog</a>
-          <a href="#contact">Contact</a>
+      <div className={`menu-link ${isOpen ? 'max-h-[500px]' : 'max-h-0'}`}>
+        <div className='p-3'>
+          <a href="#home" className='block '>Home</a>
+          <a href="#about" className='block'>About</a>
+          <a href="#blog" className='block'>Blog</a>
+          <a href="#contact" className='block'>Contact</a>
+        </div>  
       </div>
     </div>
     
@@ -35,4 +37,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar 

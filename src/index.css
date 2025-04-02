@@ -9,5 +9,5 @@
     }
 
 @utility menu-link{
-  @apply flex flex-col gap-4 z-20 left-0 right-0 md:hidden text-white  bg-pink-300 backdrop-blur-sm transition-all duration-900 ease-in-out;
+  @apply flex flex-col gap-4 z-20 left-0 right-0 md:hidden text-white  bg-pink-300 backdrop-blur-sm transition-all duration-600 ease-in-out overflow-hidden;
 }
