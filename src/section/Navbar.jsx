@@ -29,7 +29,7 @@ const Navbar = () => {
         </a>
         <div className='hidden md:flex space-x-7 text-gray-500 font-semibold text-xl'>
           <a href="#home" className="nav-link" >Home</a>
-          <a href="#about" className="nav-link">About</a>
+          <a href="#about" className="nav-link">About Us</a>
           <a href="#blog" className="nav-link">Blog</a>
           <a href="#contact" className="nav-link">Contact</a>
         </div>
