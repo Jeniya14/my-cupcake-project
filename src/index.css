@@ -15,7 +15,7 @@
 
 /* hero section */
 
-.hero::before,
+.hero2::before,
 .hero::after{
   content: "";
   width: 100%;
@@ -26,7 +26,7 @@
   background-size: auto 100%;
   z-index: 0;
 }
-.hero::before{
+.hero2::before{
   top: -1px;
   background-image: url("/assets/down.png");
 }
