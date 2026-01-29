@@ -15,7 +15,7 @@
 
 /* hero section */
 
-.hero2::before,
+.hero2::before,.hero2::after,
 .hero::after{
   content: "";
   width: 100%;
@@ -30,7 +30,7 @@
   top: -1px;
   background-image: url("/assets/down.png");
 }
-.hero::after{
+.hero::after,.hero2::after{
   bottom: -1px;
   background-image: url("/assets/up.png");
 }
